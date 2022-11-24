@@ -43,7 +43,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 
 6. Install kernel headers
 
-		apt install linux-headers-(uname -r)
+		apt install linux-headers-$(uname -r)
 
 7. Restart by using the command: 
 		
@@ -202,6 +202,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 		hashcat -b
 
 
+    # Python and Pip Installation
 
     After the basic setup of Kali Linux you should check for the versions of python and pip installed in Kali. If their version is mis-matched, they will       conflict and won't work properly. After the basic setup of Kali Linux you should check for the versions of python and pip installed in Kali. If their       version is mis-matched, they will conflict and won't work properly.
 
