@@ -101,7 +101,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 
     - Copy This Code       
 
-
+```bash
 Section "ServerLayout"
     Identifier "layout"
     Screen 0 "nvidia"
@@ -129,6 +129,7 @@ Section "Screen"
     Identifier "intel"
     Device "intel"
 EndSection
+```
 
 17. Now we have to create some scripts according to our display manager 
   
