@@ -99,9 +99,8 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
   
 		vim /etc/X11/xorg.conf
 
-    - Copy This Code       
-
-```bash
+    - Copy This Code
+    ```bash
 Section "ServerLayout"
     Identifier "layout"
     Screen 0 "nvidia"
@@ -136,14 +135,14 @@ EndSection
 		vim /usr/share/gdm/greeter/autostart/optimus.desktop
     
     - Copy This Code
-
-     
-					[Desktop Entry]
-					Type=Application
-					Name=Optimus
-					Exec=sh -c "xrandr --setprovideroutputsource modesetting NVIDIA-0; xrandr --auto"
-					NoDisplay=true
-					X-GNOME-Autostart-Phase=DisplayServer
+    ```bash
+[Desktop Entry]
+Type=Application
+Name=Optimus
+Exec=sh -c "xrandr --setprovideroutputsource modesetting NVIDIA-0; xrandr --auto"
+NoDisplay=true
+X-GNOME-Autostart-Phase=DisplayServer
+    ```
 
 
   
