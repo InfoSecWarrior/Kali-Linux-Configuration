@@ -43,7 +43,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 
 6. Install kernel headers
 
-		apt install linux-headers-(uname -r)
+		 apt install linux-headers-$(uname -r)
 
 7. Restart by using the command: 
 		
