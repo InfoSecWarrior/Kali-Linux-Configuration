@@ -102,33 +102,33 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
     - Copy This Code       
 
 
-					Section "ServerLayout"
-					   Identifier "layout"
-					   Screen 0 "nvidia"
-					   Inactive "intel"
-					EndSection
+Section "ServerLayout"
+    Identifier "layout"
+    Screen 0 "nvidia"
+    Inactive "intel"
+EndSection
 
-					Section "Device"
-					   Identifier "nvidia"
-					   Driver "nvidia"
-					   BusID "PCI:1:0:0"
-					EndSection
+Section "Device"
+    Identifier "nvidia"
+    Driver "nvidia"
+    BusID "PCI:1:0:0"
+EndSection
 
-					Section "Screen"
-					   Identifier "nvidia"
-					   Device "nvidia"
-					   Option "AllowEmptyInitialConfiguration"
-					EndSection
+Section "Screen"
+    Identifier "nvidia"
+    Device "nvidia"
+    Option "AllowEmptyInitialConfiguration"
+EndSection
 
-					Section "Device"
-					   Identifier "intel"
-					   Driver "modesetting"
-					EndSection
+Section "Device"
+    Identifier "intel"
+    Driver "modesetting"
+EndSection
 
-					Section "Screen"
-					   Identifier "intel"
-					   Device "intel"
-					EndSection
+Section "Screen"
+    Identifier "intel"
+    Device "intel"
+EndSection
 
 17. Now we have to create some scripts according to our display manager 
   
