@@ -61,7 +61,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
     
 10. Disable nouveau
   
-		echo -e " blacklist nouveau\nooptions nouveau modeset=0\nalias nouveau off" > /etc/modprobe.dblacklist-nouveau.conf
+		echo -e "blacklist nouveau\noptions nouveau modeset=0\nalias nouveau off" > /etc/modprobe.d/blacklist-nouveau.conf
 
 11. Generate an initramfs image
 		 
