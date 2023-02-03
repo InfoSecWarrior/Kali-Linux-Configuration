@@ -156,36 +156,6 @@ X-GNOME-Autostart-Phase=DisplayServer
   
 		[ -f /var/run/reboot-required ] && reboot -f 
       
-      
-      
-
-
-
-    Caution⚠
-
-    In case of the mis-configuration or any error, if you want to remove the NVIDIA drivers just follow the commands mentioned below and the drivers will       be removed:
-
-		apt-get remove --purge nvidia*
-			   
-		rm -rf /etc/X11/xorg.conf
-			   
-		dpkg --configure -a
-			  
-		apt autoremove 
-
-
-
-    After the successful installation of NVIDIA drivers and everything, don't run the following commands as it can result in the deletion if the drivers.
-
-		apt update
- 		 
-		apt upgrade
- 		 
-		apt autoremove
- 		 
-		apt autoclean
-
-
 
 
 20. For checking if the NVIDIA driver is working or not
@@ -256,6 +226,31 @@ X-GNOME-Autostart-Phase=DisplayServer
       
       
 Caution⚠      
+
+    In case of the mis-configuration or any error, if you want to remove the NVIDIA drivers just follow the commands mentioned below and the drivers will       be removed:
+
+		apt-get remove --purge nvidia*
+			   
+		rm -rf /etc/X11/xorg.conf
+			   
+		dpkg --configure -a
+			  
+		apt autoremove 
+
+
+
+    After the successful installation of NVIDIA drivers and everything, don't run the following commands as it can result in the deletion if the drivers.
+
+		apt update
+ 		 
+		apt upgrade
+ 		 
+		apt autoremove
+ 		 
+		apt autoclean
+
+
+
 
 After the setup is complete, don't update or upgrade the version of Kali Linux until it is extremely necessary because if you do there might be chances of mis-configuration or versions mis-matching and Kali will not work properly after that.
 
