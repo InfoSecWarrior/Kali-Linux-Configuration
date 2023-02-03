@@ -216,12 +216,9 @@ X-GNOME-Autostart-Phase=DisplayServer
 29. After the successful installation of the above you can just install the basic tools that we need by the single command:
 
 
-		apt install rclone vim fonts-lato fonts-open-sans fonts-roboto fonts-mononoki fonts-indic grc python-is-python3 gcc-multilib g++-multilib libtesseract-dev jq python3-pip openvpn network-manager-openvpn network-manager-openvpn-gnome krita testssl.sh dirsearch wkhtmltopdf virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso golang remmina remmina-plugin-rdp remmina-plugin-secret youtube-dl
+		apt install build-essential cmake ninja-build libgtkmm-3.0-dev libgtksourceviewmm-3.0-dev libxml++2.6-dev libsqlite3-dev gettext libgspell-1-dev libcurl4-openssl-dev libuchardet-dev libfribidi-dev libvte-2.91-dev libfmt-dev libspdlog-dev rclone vim fonts-lato fonts-open-sans fonts-roboto fonts-mononoki fonts-indic grc python3 python-is-python3 gcc-multilib g++-multilib libtesseract-dev jq python3-pip openvpn network-manager-openvpn network-manager-openvpn-gnome  testssl.sh dirsearch wkhtmltopdf virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso golang remmina remmina-plugin-rdp remmina-plugin-secret youtube-dl flameshot ruby whois git curl libpcap-dev wget zip python3-dev pv dnsutils libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev nmap apt-transport-https lynx tor medusa xvfb libxml2-utils procps bsdmainutils libdata-hexdump-perl wget curl tmux git nmap masscan unzip chromium rsync coreutils net-tools htop prips xmlstarlet gnome-power-manager jython mesa-utils wmctrl
       
- 
-30. To check the system is encoding or not, give the following command:
 
-		ffmpeg -encoders 2>/dev/null | grep nvenc
       
       
       
