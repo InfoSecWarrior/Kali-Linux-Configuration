@@ -224,7 +224,7 @@ X-GNOME-Autostart-Phase=DisplayServer
       
 Caution⚠      
 
-    In case of the mis-configuration or any error, if you want to remove the NVIDIA drivers just follow the commands mentioned below and the drivers will       be removed:
+In case of the mis-configuration or any error, if you want to remove the NVIDIA drivers just follow the commands mentioned below and the drivers will       be removed:
 
 		apt-get remove --purge nvidia*
 			   
@@ -236,7 +236,7 @@ Caution⚠
 
 
 
-    After the successful installation of NVIDIA drivers and everything, don't run the following commands as it can result in the deletion if the drivers.
+After the successful installation of NVIDIA drivers and everything, don't run the following commands as it can result in the deletion if the drivers.
 
 		apt update
  		 
