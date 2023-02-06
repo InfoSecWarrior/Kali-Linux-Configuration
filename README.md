@@ -285,5 +285,3 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
     ```
 
 *After the setup is complete, don't update or upgrade the version of Kali Linux until it is extremely necessary because if you do there might be chances of mis-configuration or versions mis-matching and Kali will not work properly after that.*
-
-**After all this, the Basic SetUp for Kali Linux is complete and you're good to go!!**
