@@ -192,7 +192,7 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 21. **Encoding enabled or not:**
 	
     ```bash
-    	apt install ffmpeg
+	apt install ffmpeg
 	ffmpeg -encoders 2>/dev/null | grep nvenc
     ```
 
