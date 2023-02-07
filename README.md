@@ -226,20 +226,32 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 	python2.7 -V
     ```
 
-26. **For pip**
+26. **For pip 2.7**
 
     ```bash
 	pip2.7 -V 
     ```  
-      
-    If Pip version 2.7 is not installed, google “https://bootstrap.pypa.io/pip/” and from there download the 2.7 version.
-  
-27. **Run the comman**
-
+    Download pip2.7 version.
+    ```bash
+    wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+    ```
+    Install your pip2.7 version package.
     ```bash
     python2.7 get-pip.py
     ```
 
+27. **For pip**
+
+     ```bash
+	pip -V 
+    ```  
+    Check And Download the latest pip version package https://bootstrap.pypa.io/pip/
+    
+    Install your latest version package.
+    ```bash
+    python get-pip.py
+    ```
+    
 28. **You can install Sublime editor from the official Sublime website.**
     
     ```bash
@@ -288,6 +300,98 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 *After the setup is complete, don't update or upgrade the version of Kali Linux until it is extremely necessary because if you do there might be chances of mis-configuration or versions mis-matching and Kali will not work properly after that.*
 
 
+## Multi gesture  in Kali Linux.  
+
+<B>`To get multi-gesture functionality on the trackpad in Kali Linux, you need touchegg tool.`
+  </B>
+  
+ You don't get the tool in repo so you need the download the `.deb` package via its **[github releases](https://github.com/JoseExposito/touchegg/releases)**
+
+ Once you have **downloaded** the package install it. (there are **2 ways to install** the *package*)
+
+-  By **apt.**
+
+    ```bash
+    wget https://github.com/JoseExposito/touchegg/releases/download/2.0.16/touchegg_2.0.16_amd64.deb
+    ```
+    ```bash
+    apt install ./touchegg_2.0.16_amd64.deb
+    ```
+
+ 
+-   By **dpkg.**
+
+     ```bash
+    wget https://github.com/JoseExposito/touchegg/releases/download/2.0.16/touchegg_2.0.16_amd64.deb
+    ```
+    ```bash
+    dpkg --install ./touchegg_2.0.16_amd64.deb
+    ```
+    ```bash
+    sudo apt --fix-broken install
+    ```
+
+-   **Check the status of the service and start it.**
+
+    ```bash
+    systemctl status touchegg.service
+    ```
+
+    ```bash
+    systemctl start touchegg.service
+    ```
+
+-   **Enable the service**
+
+    ```bash
+    systemctl enable touchegg.service
+    ```
+
+-   **Restart by using the command**
+
+    ```bash
+	[ -f /var/run/reboot-required ] && reboot -f
+    ```
+
+**For the tool to work you need [GNOME shell integration](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) on your browser.**
+
+Add the extention to your browser and open the extenstion search for [X11](https://extensions.gnome.org/extension/4033/x11-gestures/) `toggle it to ON`
+
+**it will prompt you to install the extention approve it**
+
+*Restart your laptop, after restart try 3 fingure gesture to zoom out of the screen.*
+
+Can also customize the gestures accordingly in my opinion default just work fine.
+
+
+
+
+## Right click not working in trackpad.
+
+When you install Kali Linux sometimes you come across a weird issue regarding the trackpad
+RIGHT click doesn't work as intended i.e. It does not show you the dialog box of copy,paste etc (the one by which you used to refresh your windows PC with)
+
+-   **To bring it back:**
+
+    ```bash
+    apt update
+    ```
+    ```bash
+    apt install xserver-xorg-input-synaptics
+    ```
+
+    ```bash
+    synclient tapbutton1=1
+    ```
+
+-   **Restart by using the command**
+
+    ```bash
+	[ -f /var/run/reboot-required ] && reboot -f
+    ```
+
+**After all this, the Basic SetUp for Kali Linux is complete and you're good to go!!**
+=======
 **After all this, the Basic SetUp for Kali Linux is complete and you're good to go!!**
 =======
 After all this, the Basic SetUp for Kali Linux is complete and you're good to go!!
@@ -371,4 +475,3 @@ synclient tapbutton1=1
 ```
 
 **restart you laptop**
-
