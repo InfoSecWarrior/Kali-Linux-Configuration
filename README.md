@@ -226,20 +226,32 @@ It ranges from the setup the repository to the installation of NVIDIA graphic dr
 	python2.7 -V
     ```
 
-26. **For pip**
+26. **For pip 2.7**
 
     ```bash
 	pip2.7 -V 
     ```  
-      
-    If Pip version 2.7 is not installed, google “https://bootstrap.pypa.io/pip/” and from there download the 2.7 version.
-  
-27. **Run the comman**
-
+    Download pip2.7 version.
+    ```bash
+    wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+    ```
+    Install your pip2.7 version package.
     ```bash
     python2.7 get-pip.py
     ```
 
+27. **For pip**
+
+     ```bash
+	pip -V 
+    ```  
+    Check And Download the latest pip version package https://bootstrap.pypa.io/pip/
+    
+    Install your latest version package.
+    ```bash
+    python get-pip.py
+    ```
+    
 28. **You can install Sublime editor from the official Sublime website.**
     
     ```bash
