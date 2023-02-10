@@ -314,10 +314,6 @@ apt autoremove
 **DON't run the following commands as it can result in the deletion if the drivers.**
 
 ```bash
-apt update
- 	
-apt upgrade
- 	
 apt autoremove
  	
 apt autoclean
