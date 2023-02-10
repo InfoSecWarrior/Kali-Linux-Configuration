@@ -427,4 +427,4 @@ synclient tapbutton1=1
 
 
 throughout the code wherever you see text in [this fomat]() it contains important URL links for respective tools or commands
-OPEN the links with **'ctl key pressed while you click'** so that it will **open in new tab**
+OPEN the links with **'ctl key pressed while you click'** so that it will **open in new tab**.
