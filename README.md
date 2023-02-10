@@ -328,7 +328,8 @@ apt autoclean
 because if you do there might be chances of **mis-configuration or versions mis-matching** and Kali will not work properly after that.*
 
 
-===========================================================================================================
+
+
 **After all this, the Basic SetUp for Kali Linux is complete and you're good to go!!**
 
 
