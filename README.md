@@ -241,7 +241,7 @@ We will install the **2.7 version of both Python and Pip**:
 
 Check for those versions if they are installed or not ny using the following commands:
 
-**For Pyhon**
+**For Python**
 
 ```bash
 python2.7 -V
