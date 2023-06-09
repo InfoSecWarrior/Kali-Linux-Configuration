@@ -38,7 +38,7 @@ THE **default** REPO
 **Fast** REPO
 
 ```bash
- deb http://kali.download/kali kali-rolling main contrib non-free
+ deb https://kali.download/kali kali-rolling main contrib non-free
 ```
 **Replace the current/default repo's url with the mirror repo's url. (It will help speed up the downloading processes) 
 But if it doesn't work and the downloading speed is slow, undo the changes in the file.**
