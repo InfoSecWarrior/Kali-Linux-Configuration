@@ -72,7 +72,7 @@ apt install linux-headers-$(uname -r)
 **Restart by using the command:**
 
 ```bash
-[ -f /var/run/reboot-required ] && reboot -f
+[ -f /var/run/reboot-required ] && reboot
 ```
 
 **note:** The above commands will install Kali Linux on PC/Laptop with integrated graphics, you can skip the NVIDIA part and directly go to [python installation](https://github.com/InfoSecWarrior/Kali-Linux-Configuration#python)
