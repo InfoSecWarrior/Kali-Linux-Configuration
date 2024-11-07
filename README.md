@@ -60,7 +60,7 @@ apt full-upgrade
  **Restart Required by using the command:**
 
 ```bash
- [ -f /var/run/reboot-required ] && reboot -f
+ [ -f /var/run/reboot-required ] && reboot
 ```
 
 **Install kernel headers.**
