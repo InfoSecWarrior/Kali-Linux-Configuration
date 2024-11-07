@@ -48,6 +48,8 @@ apt update
 	
 apt upgrade 
 
+apt install kali-linux-everything
+
 apt install kali-linux-large
 		
 apt dist-upgrade
