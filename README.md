@@ -275,6 +275,28 @@ Install your latest version package.
 ```bash
 python get-pip.py
 ```
+
+## Install and Configure ZSH Shell
+
+Install ZSH:
+
+```bash
+apt install zsh
+```
+
+Download and use the `.zshrc` configuration file:
+
+```bash
+cd
+wget https://raw.githubusercontent.com/InfoSecWarrior/Kali-Linux-Configuration/refs/heads/main/.zshrc
+```
+
+Set ZSH as the default shell:
+```bash
+chsh -s $(which zsh)
+```
+Restart the terminal to apply changes.
+
     
 **You can install Sublime editor from the official Sublime website.**
 
